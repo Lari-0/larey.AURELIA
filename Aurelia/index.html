@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR (НОВЫЙ) -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <span class="navbar-logo">AURELIA</span>
+        <div class="navbar-links">
+            <a href="#gallery-section">Интерьер</a>
+            <a href="#menu-section">Меню</a>
+            <a href="#chef-section">Шеф</a>
+            <a href="#hours-section">Часы</a>
+        </div>
+        <button class="reserve-btn navbar-reserve">Забронировать</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="images/hero.jpg" class="hero-image" alt="Aurelia Restaurant">
+    <div class="about-card">
+        <h2>Добро пожаловать в Aurelia</h2>
+        <p>
+            Изысканный ресторан, где сочетаются исключительная кухня,
+            элегантные интерьеры и незабываемые впечатления.
+        </p>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery-section">
+
+    <div class="gallery-title">
+        <div class="intro-wrapper">
+            <h2>Our Interior</h2>
+            <p>
+                Элегантное пространство, где свет,
+                текстуры и атмосфера создают идеальный баланс.
+            </p>
+        </div>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="images/interior1.jpg" alt="Интерьер 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/interior2.jpg" alt="Интерьер 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/interior3.jpg" alt="Интерьер 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/interior4.jpg" alt="Интерьер 4">
+        </div>
+    </div>
+
+</section>
+
+<!-- CHEF -->
+<section class="chef-section" id="chef-section">
+    <div class="chef-card">
+        <div class="chef-image">
+            <img src="images/images/chef.jpg" alt="Chef François Delacroix">
+        </div>
+        <div class="chef-content">
+            <span class="chef-label">Executive Chef</span>
+            <h2>François Delacroix</h2>
+            <p>
+                Более 15 лет опыта в высокой кухне.
+                Его блюда сочетают современные техники,
+                лучшие сезонные ингредиенты и внимание к каждой детали.
+            </p>
+            <p>
+                Каждое блюдо в AURELIA создаётся с уважением
+                к традициям и стремлением подарить гостям
+                незабываемые впечатления.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN MENU -->
+<section class="menu" id="menu-section">
+
+    <div class="menu-title">
+        <h2>Авторское меню</h2>
+        <p>Отобранные блюда от нашего шеф-повара</p>
+    </div>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="images/pasta_truffle.jpg" alt="Паста с трюфелем">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Паста с трюфелем</h3>
+                    <span>€28</span>
+                </div>
+                <p>Домашняя паста с чёрным трюфелем и пармезаном.</p>
+                <button class="menu-view-btn"
+                    data-title="Паста с трюфелем"
+                    data-desc="Паста, чёрный трюфель, пармезан, сливочный соус"
+                    data-img="images/pasta_truffle.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/wagyu.jpg" alt="Стейк Вагю">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Стейк Вагю</h3>
+                    <span>€52</span>
+                </div>
+                <p>Премиальная говядина с травяным маслом.</p>
+                <button class="menu-view-btn"
+                    data-title="Стейк Вагю"
+                    data-desc="Вагю говядина, травяное масло, морская соль"
+                    data-img="images/wagyu.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/oysters.jpg" alt="Устрицы">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Устрицы</h3>
+                    <span>€24</span>
+                </div>
+                <p>Свежие устрицы с лимоном.</p>
+                <button class="menu-view-btn"
+                    data-title="Устрицы"
+                    data-desc="Свежие устрицы, лимон, соус mignonette"
+                    data-img="images/oysters.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/salmon_tartaree.jpg" alt="Тартар из лосося">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Тартар из лосося</h3>
+                    <span>€26</span>
+                </div>
+                <p>Лосось с авокадо и цитрусом.</p>
+                <button class="menu-view-btn"
+                    data-title="Тартар из лосося"
+                    data-desc="Лосось, авокадо, лайм, оливковое масло"
+                    data-img="images/salmon_tartaree.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/burger.jpg" alt="Бургер Deluxe">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Бургер Deluxe</h3>
+                    <span>€19</span>
+                </div>
+                <p>Сочный бургер с сыром чеддер.</p>
+                <button class="menu-view-btn"
+                    data-title="Бургер Deluxe"
+                    data-desc="Говядина, чеддер, булочка, фирменный соус"
+                    data-img="images/burger.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/pizza.jpg" alt="Пицца Маргарита">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Пицца Маргарита</h3>
+                    <span>€18</span>
+                </div>
+                <p>Классическая итальянская пицца.</p>
+                <button class="menu-view-btn"
+                    data-title="Пицца Маргарита"
+                    data-desc="Томат, моцарелла, базилик"
+                    data-img="images/pizza.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/gnocchi.jpg" alt="Гноччи">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Гноччи со сливочным соусом</h3>
+                    <span>€20</span>
+                </div>
+                <p>Картофельные гноччи.</p>
+                <button class="menu-view-btn"
+                    data-title="Гноччи"
+                    data-desc="Картофель, сливочный соус, пармезан"
+                    data-img="images/gnocchi.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/caesare.jpg" alt="Куриное филе">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Куриное филе с травами</h3>
+                    <span>€22</span>
+                </div>
+                <p>Нежное филе с травами.</p>
+                <button class="menu-view-btn"
+                    data-title="Куриное филе"
+                    data-desc="Курица, розмарин, тимьян, сливочный соус"
+                    data-img="images/chicken_herbs.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/risotto.jpg" alt="Ризотто">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Ризотто с грибами</h3>
+                    <span>€24</span>
+                </div>
+                <p>Кремовое ризотто с грибами.</p>
+                <button class="menu-view-btn"
+                    data-title="Ризотто"
+                    data-desc="Рис арборио, белые грибы, пармезан"
+                    data-img="images/images/risotto.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/images/duck.jpg" alt="Утиная грудка">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Утиная грудка</h3>
+                    <span>€34</span>
+                </div>
+                <p>Сочная утка с ягодным соусом.</p>
+                <button class="menu-view-btn"
+                    data-title="Утиная грудка"
+                    data-desc="Утка, ягоды, овощи"
+                    data-img="images/images/images/duck.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/scallopse.jpg" alt="Морские гребешки">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Морские гребешки</h3>
+                    <span>€34</span>
+                </div>
+                <p>Гребешки с пюре.</p>
+                <button class="menu-view-btn"
+                    data-title="Гребешки"
+                    data-desc="Морские гребешки, сельдерейное пюре"
+                    data-img="images/images/scallopse.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/images/tomahawk.jpg" alt="Стейк Томагавк">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Стейк Томагавк</h3>
+                    <span>€68</span>
+                </div>
+                <p>Выдержанный стейк.</p>
+                <button class="menu-view-btn"
+                    data-title="Томагавк"
+                    data-desc="Говядина, винный соус"
+                    data-img="images/images/images/tomahawk.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/caesar.jpg" alt="Салат с авокадо">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Салат с авокадо</h3>
+                    <span>€16</span>
+                </div>
+                <p>Лёгкий свежий салат.</p>
+                <button class="menu-view-btn"
+                    data-title="Салат"
+                    data-desc="Авокадо, зелень, оливковое масло"
+                    data-img="images/images/caesar.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/scallops.jpg" alt="Буйабес">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Буйабес</h3>
+                    <span>€18</span>
+                </div>
+                <p>Французский рыбный суп.</p>
+                <button class="menu-view-btn"
+                    data-title="Буйабес"
+                    data-desc="Морепродукты, шафран, бульон"
+                    data-img="images/images/scallops.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/chicken_herbs.jpg"Курица Пармезан">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Курица Пармезан</h3>
+                    <span>€26</span>
+                </div>
+                <p>Курица с нежным пюре.</p>
+                <button class="menu-view-btn"
+                    data-title="Курица Пармезан"
+                    data-desc="Курица, пюре,"
+                    data-img="images/images/chicken_herbs.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/lasagna.jpg" alt="Лазанья">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Лазанья</h3>
+                    <span>€22</span>
+                </div>
+                <p>Классическая лазанья.</p>
+                <button class="menu-view-btn"
+                    data-title="Лазанья"
+                    data-desc="Мясной соус, паста, сыр"
+                    data-img="images/images/lasagna.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience">
+    <div class="experience-overlay">
+        <h2>Незабываемые впечатления от ужина</h2>
+        <p>
+            Здесь каждая деталь продумана с точки зрения
+            элегантности, вкуса и атмосферы.
+            Мы создаём не просто блюда —
+            мы создаём эмоции, которые остаются с вами.
+        </p>
+    </div>
+</section>
+
+<!-- DESSERTS -->
+<section class="menu">
+    <div class="menu-title">
+        <h2>Десерты</h2>
+        <p>Финальный аккорд гастрономического вечера</p>
+    </div>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="images/cheesecake.jpg" alt="Чизкейк">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Чизкейк Нью-Йорк</h3>
+                    <span>€16</span>
+                </div>
+                <p>Кремовая текстура с ягодами.</p>
+                <button class="menu-view-btn"
+                    data-title="Чизкейк Нью-Йорк"
+                    data-desc="Сливочный сыр, песочная основа, ягодный соус, свежие ягоды."
+                    data-img="images/cheesecake.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/tiramisu.jpg" alt="Тирамису">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Тирамису</h3>
+                    <span>€18</span>
+                </div>
+                <p>Классический десерт с кофе и маскарпоне.</p>
+                <button class="menu-view-btn"
+                    data-title="Тирамису"
+                    data-desc="Бисквит савоярди, кофе эспрессо, крем маскарпоне, какао."
+                    data-img="images/tiramisu.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/chocolate_fondant.jpg" alt="Шоколадный фондан">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Шоколадный фондан</h3>
+                    <span>€20</span>
+                </div>
+                <p>Тёплый шоколадный десерт с жидкой начинкой.</p>
+                <button class="menu-view-btn"
+                    data-title="Шоколадный фондан"
+                    data-desc="Тёмный шоколад, сливочное масло, ванильное мороженое."
+                    data-img="images/chocolate_fondant.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/panna_cotta.jpg" alt="Панна-котта">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Панна-котта</h3>
+                    <span>€15</span>
+                </div>
+                <p>Нежный сливочный десерт с ягодным соусом.</p>
+                <button class="menu-view-btn"
+                    data-title="Панна-котта"
+                    data-desc="Сливки, ваниль, ягодный соус, свежая мята."
+                    data-img="images/panna_cotta.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/croissant.jpg" alt="Круассан">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Круассан</h3>
+                    <span>€6</span>
+                </div>
+                <p>Свежая французская выпечка.</p>
+                <button class="menu-view-btn"
+                    data-title="Круассан"
+                    data-desc="Слоёное тесто, сливочное масло премиального качества."
+                    data-img="images/images/croissant.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/cake.jpg" alt="Шоколадный торт">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Шоколадный торт</h3>
+                    <span>€9</span>
+                </div>
+                <p>Насыщенный шоколадный вкус.</p>
+                <button class="menu-view-btn"
+                    data-title="Шоколадный торт"
+                    data-desc="Шоколадный бисквит, крем ганаш, какао."
+                    data-img="images/images/cake.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/apple_tart.jpg" alt="Яблочный тарт">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Яблочный тарт</h3>
+                    <span>€11</span>
+                </div>
+                <p>Тонкое тесто с карамелизированными яблоками.</p>
+                <button class="menu-view-btn"
+                    data-title="Яблочный тарт"
+                    data-desc="Песочное тесто, яблоки, карамель, корица."
+                    data-img="images/images/apple_tart.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/gelato.jpg" alt="Мороженое">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Мороженое</h3>
+                    <span>€7</span>
+                </div>
+                <p>Ваниль, шоколад или клубника.</p>
+                <button class="menu-view-btn"
+                    data-title="Мороженое"
+                    data-desc="Натуральные сливки, ваниль, шоколад или клубника."
+                    data-img="images/gelato.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- DRINKS -->
+<section class="menu">
+    <div class="menu-title">
+        <h2>Напитки</h2>
+        <p>Освежающие и классические напитки</p>
+    </div>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="images/images/water.jpg" alt="Минеральная вода">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Минеральная вода</h3>
+                    <span>€4</span>
+                </div>
+                <p>Газированная или негазированная.</p>
+                <button class="menu-view-btn"
+                    data-title="Минеральная вода"
+                    data-desc="Премиальная минеральная вода на выбор: газированная или негазированная."
+                    data-img="images/images/water.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/juice.jpg" alt="Свежий сок">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Свежий сок</h3>
+                    <span>€6</span>
+                </div>
+                <p>Апельсин, яблоко или морковь.</p>
+                <button class="menu-view-btn"
+                    data-title="Свежий сок"
+                    data-desc="Свежевыжатый сок из апельсина, яблока или моркови."
+                    data-img="images/images/juice.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/coffee.jpg" alt="Кофе">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Кофе</h3>
+                    <span>€5</span>
+                </div>
+                <p>Эспрессо, латте или капучино.</p>
+                <button class="menu-view-btn"
+                    data-title="Кофе"
+                    data-desc="Эспрессо, американо, латте или капучино из отборных зёрен арабики."
+                    data-img="images/images/coffee.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/images/tea.jpg" alt="Чай">
+            <div class="menu-content">
+                <div class="menu-header">
+                    <h3>Чай</h3>
+                    <span>€4</span>
+                </div>
+                <p>Чёрный, зелёный или травяной.</p>
+                <button class="menu-view-btn"
+                    data-title="Чай"
+                    data-desc="Чёрный, зелёный, жасминовый или травяной чай на выбор."
+                    data-img="images/images/tea.jpg">
+                    Посмотреть
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- OPENING HOURS -->
+<section class="hours-section" id="hours-section">
+    <div class="hours-card">
+        <h2>Opening Hours</h2>
+        <div class="hours-grid">
+            <div class="hours-item">
+                <h3>Monday – Thursday</h3>
+                <p>12:00 – 22:00</p>
+            </div>
+            <div class="hours-item">
+                <h3>Friday – Sunday</h3>
+                <p>12:00 – 23:30</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation">
+    <div class="reservation-card">
+        <h2>Зарезервируйте Свой Столик</h2>
+        <p>
+            Проведите незабываемый вечер в Aurelia и насладитесь нашими фирменными блюдами.
+        </p>
+        <button class="reserve-btn">
+            Забронировать столик
+        </button>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="stats-grid">
+        <div class="stat-card" data-count="5000" data-suffix="+">
+            <h2 class="stat-number">5000+</h2>
+            <p>Довольных гостей</p>
+        </div>
+        <div class="stat-card">
+            <h2>4.9★</h2>
+            <p>Средняя оценка</p>
+        </div>
+        <div class="stat-card" data-count="20" data-suffix="+">
+            <h2 class="stat-number">20+</h2>
+            <p>Авторских блюд</p>
+        </div>
+        <div class="stat-card" data-count="8" data-suffix=" лет">
+            <h2 class="stat-number">8 лет</h2>
+            <p>Опыта</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <h3>AURELIA</h3>
+    <p class="footer-subtitle">Luxury Dining Experience</p>
+    <div class="footer-info">
+        <p>📍 25 Aurelia Boulevard</p>
+        <p>+49 123 456 789</p>
+        <p>✉ info@aurelia-restaurant.com</p>
+        <button class="location-btn" id="openLocation">
+            📍 Как добраться
+        </button>
+    </div>
+    <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Aurelia Restaurant. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTopBtn">↑</button>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal" id="bookingModal">
+    <div class="modal-header">
+        <h2>Бронирование столика</h2>
+        <span class="close-btn" id="closeModal">×</span>
+    </div>
+    <div class="modal-form">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="date" required>
+        <input type="time" required>
+        <select>
+            <option value="" disabled selected>Количество гостей</option>
+            <option>1 гость</option>
+            <option>2 гостя</option>
+            <option>3 гостя</option>
+            <option>4 гостя</option>
+            <option>5+ гостей</option>
+        </select>
+        <button type="button" id="confirmBooking">Подтвердить бронь</button>
+    </div>
+</div>
+
+<!-- LOCATION OVERLAY & MODAL -->
+<div class="modal-overlay" id="locationOverlay"></div>
+<div class="menu-modal" id="locationModal">
+    <span class="menu-close" id="locationClose">×</span>
+    <div class="menu-modal-text">
+        <h2>Как добраться</h2>
+        <p>📍 25 Aurelia Boulevard</p>
+        <p>Ресторан расположен в престижном районе города рядом с набережной.</p>
+        <p>🚇 Станция Aurelia Center — 5 минут пешком.</p>
+        <p>🚕 Для гостей доступна парковка и такси-зона.</p>
+    </div>
+</div>
+
+<!-- MENU OVERLAY & MODAL -->
+<div class="modal-overlay" id="menuOverlay"></div>
+<div class="menu-modal" id="menuModal">
+    <span class="menu-close" id="menuClose">×</span>
+    <div class="menu-modal-content">
+        <img id="menuModalImg" src="" alt="">
+        <div class="menu-modal-text">
+            <h2 id="menuModalTitle"></h2>
+            <p><strong>Состав:</strong></p>
+            <p id="menuModalDesc"></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
